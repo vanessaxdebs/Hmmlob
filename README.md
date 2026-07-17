@@ -1,7 +1,7 @@
 # HMMologs
 
 ## Pipeline
-![Pipeline]
+![Pipeline](./assets/pipeline.png)
 
 ## Installation
 1. Clone the repository:
