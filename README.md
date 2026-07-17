@@ -6,7 +6,7 @@
 ## Installation
 1. Clone the repository:
 ```shell
-git clone https://github.com/KinitaL/hmmologs.git
+git clone https://github.com/vanessaxdebs/Hmmolob.git
 ```
 2. Create the conda env:
 ```shell
@@ -14,7 +14,7 @@ conda env create --file=env.yaml
 ```
 3. Activate the env:
 ```shell
-conda activate hmmologs
+conda activate Hmmlob
 ```
 
 ## Configuration
