@@ -1,0 +1,28 @@
+# seed that has to be specified to make the random package
+seed: 32
+# the directory that will be used as the root for the output of the script
+output_dir: ./test
+target:
+  # InterPro domain ID
+  interpro_id: IPR036880 # https://www.ebi.ac.uk/interpro/entry/InterPro/IPR036880/
+  # the number of structures that will be taken from UniProt to train a model
+  structures_number_limit: 400
+pdb_filter:
+  # PDB structures with the resolution lower than this threshold will be discarded
+  resolution_threshold: 3.0
+  # PDB structures with the number of residues larger than this threshold will be discarded
+  max_residues_count: 100
+validation:
+  # percentage of the training dataset that will be reused to validate recall of the model
+  dataset_fraction: 0.3
+  # E-value threshold for hmmsearch routine on the validation step
+  e_value_threshold: 1e-10
+search:
+  # the flag that specifies if we are going to do search or not
+  do: true
+  # the path to file with sequences that will be used to search. LEAVE EMPTY if you want to search against the whole PDB.
+  db: ./data/search/IPR036880_candidates.fa
+  # the percentage of the sequences from the DB that will be used for search
+  db_fraction: 0.15 # => 35409 structures
+  # E-value threshold for hmmsearch routine on the search step
+  e_value_threshold: 1e-10

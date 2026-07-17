@@ -1,0 +1,8 @@
+output_dir:
+max_amount_of_proteins:
+domain:
+  interpro_id:
+pdb_filter:
+  resolution_threshold:
+  max_residues_count:
+validation_set_fraction:
