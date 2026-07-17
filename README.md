@@ -14,7 +14,7 @@ conda env create --file=env.yaml
 ```
 3. Activate the env:
 ```shell
-conda activate Hmmlob
+conda activate hmmlob
 ```
 
 ## Configuration
